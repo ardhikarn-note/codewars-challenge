@@ -13,7 +13,7 @@
 // option 2
 var summation = function (num) {
   let result = 0;
-  for (let i = 0; i < num; i++) {
+  for (let i = 1; i <= num; i++) { // kenapa bukan let i = 0 ? karena summation mulai nya dari 1
     result += i;
   }
   return result;
