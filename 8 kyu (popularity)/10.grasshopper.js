@@ -6,11 +6,18 @@
 // summation(8) -> 36
 // 1 + 2 + 3 + 4 + 5 + 6 + 7 + 8
 
-var summation = function (num) {
-  return (num * (num+1)) / 2; // rumus summation from 1 to num 
-}
+// var summation = function (num) {
+//   return (num * (num+1)) / 2; // rumus summation from 1 to num 
+// }
 
-// 2 * 3 / 2
+// option 2
+var summation = function (num) {
+  let result = 0;
+  for (let i = 0; i < num; i++) {
+    result += i;
+  }
+  return result;
+}
 
 console.log(summation(1), 1)
 console.log(summation(8), 36)
